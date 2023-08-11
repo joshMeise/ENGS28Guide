@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linux Guide</title>
+  <introduction>
+    <p>This is a brief guide to some of the Lunux commands that will be used in ENGS 28 this term.</p>
+  </introduction>
+  <subsection xml:id="subsec-linux-commands">
+    <title>Linux Commands</title>
+    <table>
+      <title>Linux Commands</title>
+      <tabular top="medium">
+        <row header="yes" left="medium">
+          <cell right="minor" bottom="medium">Task:</cell>
+          <cell right="medium" bottom="medium">Command:</cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Find Arduino's USB port</cell>
+          <cell right="medium" bottom="minor"><c>ls /dev/tty.usb*</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Navigate to a certain folder/ change directory</cell>
+          <cell right="medium" bottom="minor"><c>cd</c> pathway</cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Terminate program</cell>
+          <cell right="medium" bottom="minor"><c>Ctrl + c</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Clear terminal window</cell>
+          <cell right="medium" bottom="minor"><c>Ctrl + l</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">List directories in current folder</cell>
+          <cell right="medium" bottom="minor"><c>ls</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Make a new directory</cell>
+          <cell right="medium" bottom="minor"><c>mkdir</c> directory name</cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Create a new file</cell>
+          <cell right="medium" bottom="minor"><c>touch</c> file name</cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Print current directory</cell>
+          <cell right="medium" bottom="minor"><c>pwd</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="minor">Open screen</cell>
+          <cell right="medium" bottom="minor"><c>screen /dev/tty.usbmodem14501 9600</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="medium">Quit screen</cell>
+          <cell right="medium" bottom="medium"><c>Ctrl + k + a</c></cell>
+        </row>
+      </tabular>
+      
+    </table>
+  </subsection>
+</section>

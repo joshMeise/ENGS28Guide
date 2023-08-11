@@ -1,0 +1,763 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="section-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>C-Programming</title>
+  <introduction>
+    <p>This is a brief introduction to C-Programming concepts which will be used in ENGS 28 this term.</p>
+  </introduction>
+  <subsection xml:id="basic-syntax">
+    <title>Basic Syntax</title>
+
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      int main(void) {
+        printf("Hello, World!\n");
+        return (0);
+      }
+    </input></program>
+    
+    <p>Output:</p>
+    <p><c>Hello, World!</c></p>
+
+
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Each line ends with a semicolon.
+          </p>
+        </li>
+        <li>
+          <p>
+            Code blocks are enclosed with braces.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <c>main()</c> function is of type <c>int</c> which means that it returns an integer - 0 to indicate that the code compiled and ran successfully.
+          </p>
+        </li>
+        <li>
+          <p>
+            <c>void</c> means that the main function takes no inputs.
+          </p>
+        </li>
+        <li>
+          <p>
+            <c>\n</c> is an escape sequence that prints onto a new line.
+          </p>
+        </li>
+        <li>
+          <p>
+            Single line comments use a double backslash: <c>//comment</c>
+          </p>
+        </li>
+        <li>
+          <p>
+            Comment blocks/multi-line comments are enclosed like this:
+            <c>/*…comment…*/</c>
+            
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-hello-world.html" visual="Hello, World!"/>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-practice.html" visual="First Practice"/>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-comments.html" visual="Putting Comments in your Code"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="variables">
+    <title>Variables</title>
+
+    <p>Datatypes and format specifiers:</p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Integers:
+            <c>int</c> &#x2192; <c>%d</c>
+          </p>
+        </li>
+        <li>
+          <p>
+            Characters:
+            <c>char</c> &#x2192; <c>%c</c>
+          </p>
+        </li>
+        <li>
+          <p>
+            Floats:
+            <c>float</c> &#x2192; <c>%f</c>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      int main(void) {
+        int var1, var_two;
+        int varThree = 6;
+          
+        var1 = 2;
+        var_two = -3;
+        
+        printf("One = %d, two = %d and three = %d\n", var1, var_two, varThree);
+        
+        return(0);
+      }
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>One = 2, two = -3 and three = 6</c></p>
+
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Variables may be declared and initialized on the same line.
+          </p>
+        </li>
+        <li>
+          <p>
+            Variables may be declared first and initialized separately.
+          </p>
+        </li>
+        <li>
+          <p>
+            <c>%d</c> is the format specifier for an integer.
+          </p>
+        </li>
+        <li>
+          <p>
+            Variable names may start with letters or underscores.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book Links</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/variables.html" visual="Variables in C"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="integer-division-and-casting">
+    <title>Integer division and casting:</title>
+
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      int main(void) {
+        int var1 = 5;
+        int var2 = 3;
+        int res1;
+        float res2, res3;
+        
+        res1 = var1/var2;		// integer division
+        res2 = var1/var2;		// integer division
+        res3 = (float)var1/var2;	// cast var1 to a float
+          
+        printf("var1/var2 = %d\n", res1);
+        printf("var1/var2 = %f\n", res2);
+        printf("(float)var1/var2 = %f\n", res3);
+        printf("(int)res3 = %d\n", (int)res3);
+        
+        return(0);
+      }
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>var1/var2 = 1</c></p>
+    <p><c>var1/var2 = 1.000000</c></p>
+    <p><c>(float)var1/var2 = 1.666667</c></p>
+    <p><c>(int)res3 = 1</c></p>
+  
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            It is easy to convert between datatypes in C by casting.
+          </p>
+        </li>
+        <li>
+          <p>
+            Casting is done by placing the data type to which we want to convert in front of the current variable in parentheses.
+          </p>
+        </li>
+        <li>
+          <p>
+            Dividing integers in C yields an unexpected result.
+          </p>
+        </li>
+        <li>
+          <p>
+            C does not round; it simply cuts off decimal points.
+          </p>
+        </li>
+        <li>
+          <p>
+            In order to obtain a correct value, one of the values in the division needs to be converted or "cast" to a float.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/floats.html" visual="Floats and Converting"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+  </subsection>
+
+  <subsection xml:id="loops">
+    <title>Loops</title>
+    
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      int main(void) {
+        int i;
+        
+        // For loop
+        for (int j = 0; j &lt; 3; j++) {
+          printf("My value is: ");
+          printf("j = %d\n", j);
+        }
+      
+        // For loop with single line of code
+        for (int j = 0; j &lt; 3; j++)
+          printf("I only contain a single line of code.\n");
+      
+      
+        // Always initialize while loop counter.
+        i = 0;
+      
+        // While loop
+        while (i &lt; 3) {
+          printf("i = %d\n", i);
+          i++;
+        }
+      
+        return(0);
+      }
+        
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>My value is: j = 0</c></p>
+    <p><c>My value is: j = 1</c></p>
+    <p><c>My value is: j = 2</c></p>
+    <p><c>I only contain a single line of code.</c></p>
+    <p><c>I only contain a single line of code.</c></p>
+    <p><c>I only contain a single line of code.</c></p>
+    <p><c>i = 0</c></p>
+    <p><c>i = 1</c></p>
+    <p><c>i = 2</c></p>
+
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            For loop counters may be initialized in the loop itself or at the top of the function.
+          </p>
+        </li>
+        <li>
+          <p>
+            For loop syntax:
+            <ul>
+              <li>
+                <p>
+                  <c>i = 0;</c> This initializes the loop counter to have the value 0.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <c>i &lt; 3;</c> The terminating condition is when i is equal to 3 (i.e. no longer less than 3).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <c>i++;</c> This is analogous to <c>i = i + 1</c> and increments the loop counter, <c>i</c>, by 1 each time the loop runs.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Loops with more than one line of code need to have their contents enclosed in braces.
+          </p>
+        </li>
+        <li>
+          <p>
+            While loop counters need to be initialized.
+            <ul>
+              <li>
+                <p>
+                  Additional information: Most C-compilers initialize integer variables to have a random value. This means that counter or sum variables always need to be initialized to 0.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Ensure while loop conditions change within the loop - prevent infinite loops!
+          </p>
+        </li>
+        <li>
+          <p>
+            While loops may contain multiple conditions.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-repetition.html" visual="Repetition: A Simple for-Loop"/>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-multiple-repetitions.html" visual="Multiple Repetitions"/>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/loops.html" visual="Loops"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-branching-and-logic">
+    <title>Branching and Logic</title>
+
+    <program language="c"><input>
+    #include &lt;stdio.h&gt;
+
+    int main(void) {
+      int sunny, cold;
+
+      sunny = 1;		// True
+      cold = 0;		// False
+
+      if(sunny)
+        printf("Remember your sunglasses.\n");
+      else
+        printf("It's a gloomy day today.\n");
+
+      if(!cold)
+        printf("No jacket needed!\n");
+      else
+      printf("Bring a jacket!\n");
+
+      if (sunny &amp;&amp; cold){			// Sunny and cold
+        printf("Remember your sunglasses.\n");
+        printf("Bring a jacket!\n");
+      }
+      else if (sunny &amp;&amp; !cold){		// Sunny and not cold
+        printf("Sunglasses, but no jacket necessary.\n");
+      }
+      else if (!sunny || cold) { 	// Not sunny or cold
+        printf("Today might be a glum day.\n");
+      }
+      else {
+        printf("I can't predict today's weather.\n");
+      }
+        
+        return(0);
+    }
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>Remember your sunglasses.</c></p>
+    <p><c>No jacket needed!</c></p>
+    <p><c>Sunglasses, but no jacket necessary.</c></p>
+
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            0 is evaluated as false in C.
+          </p>
+        </li>
+        <li>
+          <p>
+            1 (or any other integer value) are evaluated as true.
+          </p>
+        </li>
+        <li>
+          <p>
+            As with loops, if statements with only a single line of code need not have their contents enclosed in braces.
+          </p>
+        </li>
+        <li>
+          <p>
+            If statements may contain complex conditions.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/branching.html" visual="Branching"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+  </subsection>
+
+  <subsection xml:id="subsec-more-branching">
+    <title>More Branching</title>
+
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      int main(void) {
+        char operation;
+        int a = 3, b = 5, res;
+
+        operation = '*';
+        
+        switch(operation) {
+          case '+':
+            res = a + b;
+            break;
+          case '-':
+            res = a - b;
+            break;
+          case '*':
+            res = a*b;
+            break;
+          case '/':
+            res = a/b;
+            break;
+          case '%':
+            res = a%b;
+            break;
+          default:			// Optional.
+            res = 0;
+        }
+      
+        printf("%d %c %d = %d\n", a, operation, b, res);
+          
+        return(0);
+      }
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>3 * 5 = 15</c></p>
+
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            A switch statement first contains the condition on which you are branching.
+          </p>
+        </li>
+        <li>
+          <p>
+            It then contains multiple cases.
+          </p>
+        </li>
+        <li>
+          <p>
+            The break statement causes the switch statement to only execute up to the point at which a condition has been met.
+          </p>
+        </li>
+        <li>
+          <p>
+            The default case is optional, does not contain a break statement and executes only if none of the other conditions have been met.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/adv-branching-switch.html" visual="The seitch() statement"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-functions">
+    <title>Functions</title>
+    
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      // Function prototypes
+      int addingFunc(int x, int y);
+      void printingFunc(int res);
+      
+      int main(void) {
+        int a, b, res;
+        
+        a = 3;
+        b = 9;
+        
+        res = addingFunc(a, b);
+      
+        printingFunc(res);
+        
+        return(0);
+      }
+      
+      /* Inputs: Two integers to be added.
+       * Output: Result of the addition of the two integers.
+       */
+      int addingFunc(int x, int y) {
+      
+        int result;
+        
+        result = x + y;
+      
+        return result;
+      }
+      
+      /* Inputs: Integer contains result of addition.
+       * Output: None.
+       */
+      void printingFunc(int res) {
+        printf("The result of the addition is %d.\n", res);
+      }
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>The result of the addition is 12.</c></p>
+
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Function prototypes included at the top of the program after library declarations.
+            <ul>
+              <li>
+                <p>
+                  Contain return type, function name and input variable types.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Parameters passed to functions when called do not need to contain data types.
+          </p>
+        </li>
+        <li>
+          <p>
+            Variables may or may not be named the same in functions as where they were sent from (more on this in variable scope).
+          </p>
+        </li>
+        <li>
+          <p>
+            Return types:
+            <ul>
+              <li>
+                <p>
+                  <c>int</c> returns an integer
+                </p>
+              </li>
+              <li>
+                <p>
+                  <c>float</c> returns a float
+                </p>
+              </li>
+              <li>
+                <p>
+                  <c>char</c> returns a character
+                </p>
+              </li>
+              <li>
+                <p>
+                 <c>void</c> does not return anything
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/functions-single.html" visual="Single Functions"/>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/functions-multiple.html" visual="Multiple Functions"/>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/functions-practice.html" visual="Practice Your Functions!"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-variable-scope">
+    <title>Variable Scope</title>
+    
+    <program language="c"><input>
+      #include &lt;stdio.h&gt;
+
+      #define ONE 1	// Defines a constant ONE to have value 1.
+      int a = 4;		// Defines a global variable 'a' to have value 4.
+      
+      // Function prototypes
+      int mathFunc(int x);
+      void printingFunc(int);
+      
+      int main(void) {
+        int b, res;
+        
+        b = 9;
+      
+        a += 4;	// Add 4 to the value of 'a'; a = 8 now.
+        
+        res = mathFunc(b);
+        
+        res -= ONE;	// Subtract 1 from current value of 'res'.
+        printingFunc(res);
+        
+        return(0);
+      }
+      
+      /* Inputs: One integer.
+       * Output: Result of an operation on integer.
+       */
+      int mathFunc(int y) {
+      
+        int result;
+        
+        result = (ONE + y)*a;   // Use constant and global variable.
+      
+        return result;
+      }
+      
+      /* Inputs: Integer contains result of mathematical operation.
+       * Output: None
+       */
+      void printingFunc(int res) {
+        printf("The result of the addition is %d.\n", res);
+      }
+    </input></program>
+
+    <p>Output:</p>
+    <p><c>The result of the addition is 79.</c></p>
+    
+    <p>Things to note:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Global variables and constants are defined at the top of the program, after library header files have been included.
+          </p>
+        </li>
+        <li>
+          <p>
+            Constants may be defined with a #define command.
+            <ul>
+              <li>
+                <p>
+                  This saves memory as each instance of the constant in the code is replaced with the value given to said constant at compile time.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The value of such constants cannot change.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Global variables are accessible by all functions in the program.
+            <ul>
+              <li>
+                <p>
+                  Their value can be changed throughout the program.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>ENGS 20 C Book links:</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/memory-scope.html" visual="The Scope of a Variable"/>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>
