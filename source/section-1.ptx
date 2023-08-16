@@ -68,17 +68,17 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-hello-world.html" visual="Hello, World!"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/firstprogram-hello-world.html" visual="Hello, World!"/>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-practice.html" visual="First Practice"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/firstprogram-practice.html" visual="First Practice"/>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-comments.html" visual="Putting Comments in your Code"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/firstprogram-comments.html" visual="Putting Comments in your Code"/>
           </p>
         </li>
       </ul>
@@ -163,7 +163,7 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/variables.html" visual="Variables in C"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/variables.html" visual="Variables in C"/>
           </p>
         </li>
       </ul>
@@ -237,7 +237,7 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/floats.html" visual="Floats and Converting"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/floats.html" visual="Floats and Converting"/>
           </p>
         </li>
       </ul>
@@ -355,17 +355,17 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-repetition.html" visual="Repetition: A Simple for-Loop"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/firstprogram-repetition.html" visual="Repetition: A Simple for-Loop"/>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/firstprogram-multiple-repetitions.html" visual="Multiple Repetitions"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/firstprogram-multiple-repetitions.html" visual="Multiple Repetitions"/>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/loops.html" visual="Loops"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/loops.html" visual="Loops"/>
           </p>
         </li>
       </ul>
@@ -448,7 +448,7 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/branching.html" visual="Branching"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/branching.html" visual="Branching"/>
           </p>
         </li>
       </ul>
@@ -528,7 +528,7 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/adv-branching-switch.html" visual="The seitch() statement"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/adv-branching-switch.html" visual="The seitch() statement"/>
           </p>
         </li>
       </ul>
@@ -641,17 +641,17 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/functions-single.html" visual="Single Functions"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/functions-single.html" visual="Single Functions"/>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/functions-multiple.html" visual="Multiple Functions"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/functions-multiple.html" visual="Multiple Functions"/>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/functions-practice.html" visual="Practice Your Functions!"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/functions-practice.html" visual="Practice Your Functions!"/>
           </p>
         </li>
       </ul>
@@ -754,7 +754,7 @@
       <ul>
         <li>
           <p>
-            <url href="https://engs20book.thayer.dartmouth.edu/c-programming/memory-scope.html" visual="The Scope of a Variable"/>
+            <url href="https://engs20book.thayer.dartmouth.edu/C-Programming/memory-scope.html" visual="The Scope of a Variable"/>
           </p>
         </li>
       </ul>
