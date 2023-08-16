@@ -83,8 +83,8 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_green_blue.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext article ignore-math">
@@ -201,7 +201,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ENGS-28-C-Programming-Guide.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="subsec-variable-scope.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ENGS-28-C-Programming-Guide.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="subsec-linux-commands.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\foo}{b^{ar}}
 \newcommand{\lt}{&lt;}
@@ -211,82 +211,31 @@ window.MathJax = {
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3"><ul class="structural">
 <li>
 <div class="toc-item"><a href="section-1.html" class="internal"><span class="codenumber">1</span> <span class="title">C-Programming</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-1.html#basic-syntax" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic Syntax</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#variables" class="internal"><span class="codenumber">1.2</span> <span class="title">Variables</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#integer-division-and-casting" class="internal"><span class="codenumber">1.3</span> <span class="title">Integer division and casting:</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#loops" class="internal"><span class="codenumber">1.4</span> <span class="title">Loops</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#subsec-branching-and-logic" class="internal"><span class="codenumber">1.5</span> <span class="title">Branching and Logic</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#subsec-more-branching" class="internal"><span class="codenumber">1.6</span> <span class="title">More Branching</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#subsec-functions" class="internal"><span class="codenumber">1.7</span> <span class="title">Functions</span></a></div></li>
-<li><div class="toc-item"><a href="section-1.html#subsec-variable-scope" class="internal"><span class="codenumber">1.8</span> <span class="title">Variable Scope</span></a></div></li>
+<li><div class="toc-item"><a href="basic-syntax.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic Syntax</span></a></div></li>
+<li><div class="toc-item"><a href="variables.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Variables</span></a></div></li>
+<li><div class="toc-item"><a href="integer-division-and-casting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Integer division and casting:</span></a></div></li>
+<li><div class="toc-item"><a href="loops.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Loops</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-branching-and-logic.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Branching and Logic</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-more-branching.html" class="internal"><span class="codenumber">1.6</span> <span class="title">More Branching</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-functions.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-variable-scope.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Variable Scope</span></a></div></li>
 </ul>
 </li>
 <li class="active">
 <div class="toc-item"><a href="section-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Linux Guide</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-2.html#subsec-linux-commands" class="internal"><span class="codenumber">2.1</span> <span class="title">Linux Commands</span></a></div></li></ul>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-linux-commands.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Linux Commands</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Linux Guide</span>
 </h2>
-<section class="introduction" id="introduction-2"><div class="para" id="p-131">This is a brief guide to some of the Lunux commands that will be used in ENGS 28 this term.</div></section><section class="subsection" id="subsec-linux-commands"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">Linux Commands</span>
-</h3>
-<figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1<span class="period">.</span></span><span class="space"> </span>Linux Commands</figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="l m b2 r1 l2 t2 lines">Task:</th>
-<th scope="col" class="l m b2 r2 l0 t2 lines">Command:</th>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Find Arduino’s USB port</td>
-<td class="l m b1 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">ls /dev/tty.usb*</code></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Navigate to a certain folder/ change directory</td>
-<td class="l m b1 r2 l0 t0 lines">
-<code class="code-inline tex2jax_ignore">cd</code> pathway</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Terminate program</td>
-<td class="l m b1 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">Ctrl + c</code></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Clear terminal window</td>
-<td class="l m b1 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">Ctrl + l</code></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">List directories in current folder</td>
-<td class="l m b1 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">ls</code></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Make a new directory</td>
-<td class="l m b1 r2 l0 t0 lines">
-<code class="code-inline tex2jax_ignore">mkdir</code> directory name</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Create a new file</td>
-<td class="l m b1 r2 l0 t0 lines">
-<code class="code-inline tex2jax_ignore">touch</code> file name</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Print current directory</td>
-<td class="l m b1 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">pwd</code></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l2 t0 lines">Open screen</td>
-<td class="l m b1 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">screen /dev/tty.usbmodem14501 9600</code></td>
-</tr>
-<tr>
-<td class="l m b2 r1 l2 t0 lines">Quit screen</td>
-<td class="l m b2 r2 l0 t0 lines"><code class="code-inline tex2jax_ignore">Ctrl + k + a</code></td>
-</tr>
-</table></div></figure></section></section></div>
+<section class="introduction" id="introduction-2"><div class="para" id="p-131">This is a brief guide to some of the Lunux commands that will be used in ENGS 28 this term.</div></section><nav class="summary-links"><ul><li><a href="subsec-linux-commands.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Linux Commands</span></a></li></ul></nav></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="section-1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>
+<a class="previous-button button" href="subsec-variable-scope.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="subsec-linux-commands.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
