@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "2.1",
   "title": "Linux Commands",
-  "body": " Linux Commands   Linux Commands    Task:  Command:    Find Arduino's USB port  ls \/dev\/tty.usb*    Navigate to a certain folder\/ change directory  cd pathway    Terminate program  Ctrl + c    Clear terminal window  Ctrl + l    List directories in current folder  ls    Make a new directory  mkdir directory name    Create a new file  touch file name    Print current directory  pwd    Open screen  screen \/dev\/tty.usbmodem14501 9600    Quit screen  Ctrl + k + a     "
+  "body": " Linux Commands   Linux Commands    Task:  Command:    Find Arduino's USB port  ls \/dev\/tty.usb*    Navigate to a certain folder\/ change directory  cd pathway    Terminate program  Ctrl + c    Clear terminal window  Ctrl + l    List directories in current folder  ls    Make a new directory  mkdir directory name    Create a new file  touch file name    Print current directory  pwd    Open screen  screen \/dev\/tty.usbmodem14501 9600    Quit screen  Ctrl + k + a    List all detached (running) screens with their screen IDs  screen -list    Connect \/ attach to a specific running screen  screen -x [screen id]    Detach or terminate all screens  killall screen     "
 },
 {
   "id": "table-1",
@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "2.1",
   "title": "Linux Commands",
-  "body": " Linux Commands    Task:  Command:    Find Arduino's USB port  ls \/dev\/tty.usb*    Navigate to a certain folder\/ change directory  cd pathway    Terminate program  Ctrl + c    Clear terminal window  Ctrl + l    List directories in current folder  ls    Make a new directory  mkdir directory name    Create a new file  touch file name    Print current directory  pwd    Open screen  screen \/dev\/tty.usbmodem14501 9600    Quit screen  Ctrl + k + a    "
+  "body": " Linux Commands    Task:  Command:    Find Arduino's USB port  ls \/dev\/tty.usb*    Navigate to a certain folder\/ change directory  cd pathway    Terminate program  Ctrl + c    Clear terminal window  Ctrl + l    List directories in current folder  ls    Make a new directory  mkdir directory name    Create a new file  touch file name    Print current directory  pwd    Open screen  screen \/dev\/tty.usbmodem14501 9600    Quit screen  Ctrl + k + a    List all detached (running) screens with their screen IDs  screen -list    Connect \/ attach to a specific running screen  screen -x [screen id]    Detach or terminate all screens  killall screen    "
 }
 ]
 
@@ -96,6 +96,7 @@ var ptx_lunr_idx = lunr(function () {
   this.ref('id')
   this.field('title')
   this.field('body')
+  this.metadataWhitelist = ['position']
 
   ptx_lunr_docs.forEach(function (doc) {
     this.add(doc)
