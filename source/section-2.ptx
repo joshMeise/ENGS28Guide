@@ -53,6 +53,19 @@
           <cell right="minor" bottom="medium">Quit screen</cell>
           <cell right="medium" bottom="medium"><c>Ctrl + k + a</c></cell>
         </row>
+        <row left="medium">
+          <cell right="minor" bottom="medium">List all detached (running) screens with their screen IDs</cell>
+          <cell right="medium" bottom="medium"><c>screen -list</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="medium">Connect / attach to a specific running screen</cell>
+          <cell right="medium" bottom="medium"><c>screen -x [screen id]</c></cell>
+        </row>
+        <row left="medium">
+          <cell right="minor" bottom="medium">Detach or terminate all screens</cell>
+          <cell right="medium" bottom="medium"><c>killall screen</c></cell>
+        </row>
+
       </tabular>
       
     </table>
